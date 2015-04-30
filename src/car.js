@@ -30,16 +30,28 @@ Car.prototype.paint = function(newColor){
 
 Car.prototype.start = function(state){
   this.state = "on";
-//  this.passengers = "John";
 }
 
 Car.prototype.off = function(state){
   this.state = "off";
 }
 
-Car.prototype.pickUp = function(passengers){
-  this.passengers = ["john"];
+Car.prototype.pickUp = function(passengers) {
+
+
+
+
+  if (this.state === "on")  {
+    this.passengers = ["john"];
 }
 
+
+
+
+}
+
+//Car.prototype.pickUp = function () {
+  //return ("start" + "passengers");
+//}
 
 module.exports=Car;
