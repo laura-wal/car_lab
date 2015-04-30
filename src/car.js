@@ -8,16 +8,6 @@ function Car(make, model, year, color, state, previousOwners) {
 }
 
 
-
-//function PreviousOwners( )
-
-//Car.prototype.previousOwners = function( )
-  
-
-
-//var off = new Car ('off');
-
-
 Car.prototype.sale = function(newOwner){
     this.newOwner = "Charlie";
     this.previousOwners = ["Manufacturer"]
@@ -43,11 +33,9 @@ Car.prototype.pickUp = function(passengers) {
 }
 
 Car.prototype.dropOff = function(passengers) {
+  if (this.state === "on") {
   this.passengers = "";
+ }
 }
-
-//Car.prototype.pickUp = function () {
-  //return ("start" + "passengers");
-//}
 
 module.exports=Car;
