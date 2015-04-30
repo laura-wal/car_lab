@@ -1,12 +1,15 @@
-function Car(make, model, year, color, state){
-  this. year = year;
+function Car(make, model, year, color, state, previousOwners) {
+  this.year = year;
   this.state = 'off';
+  this.previousOwners = "";
 }
 
 
-//Car.prototype.state = function(state) {
- // return (this.state);
-//}
+//function PreviousOwners( )
+
+//Car.prototype.previousOwners = function( )
+  
+
 
 //var off = new Car ('off');
 
